@@ -14,7 +14,7 @@ screencap of data:
 ![](main_cap.png)
 
 ### Why MongoDB?
-The first database I tried to use is SQL (more precise sqlite). Soon, I encountered the problem that the download data has inconsistent columns. For example, few columns in some data, and more columns in some data.
+The first database I tried to use is SQL (more precise sqlite). Soon, I encountered the problem that the download data has inconsistent columns. For example, fewer columns in some data, and more columns in some data.
 
 NoSQL is more flexible in terms of table schema. Therefore, I use MongoDB.
 
