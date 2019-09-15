@@ -8,7 +8,7 @@ The search.py program will search the property name in Fang.com and return the p
 ## Main.py
 The idea behind the scraping is to figure out the hidden API. Usually, Website uses API to return data from their database. Therefore, if we can find it, we can get the data in a more computer friendly way.
 
-To access the demo data, please connect to the Cloud MongoDB server via this link: mongodb+srv://admin:admin@propertychina-xxlht.mongodb.net/test?retryWrites=true&w=majority (You may download mongodb compass or nosqlbooster)
+To access the demo data, please connect to the Cloud MongoDB server via this link: mongodb+srv://admin:admin@propertychina-xxlht.mongodb.net/test?retryWrites=true&w=majority (You may download [mongodb compass](https://www.mongodb.com/products/compass) or [nosqlbooster](https://nosqlbooster.com/downloads)).
 
 screencap of data:
 ![](main_cap.png)
