@@ -42,6 +42,7 @@ for index, row in df_requests.iterrows():
                 #add more data
                 df_data['Area'] = city[:-1]
                 df_data['created_on'] = datetime.now()
+                df_data['searchString'] = searchString
 
                 #replace data
                 df_data = df_data.replace('待定', np.nan)
@@ -66,4 +67,4 @@ with open('notFound.txt', 'w') as f:
         f.write("%s\n" % item)
 
 
-df_result.to_csv("searchResult.csv")
+df_result.to_excel("searchResult.xlsx")
