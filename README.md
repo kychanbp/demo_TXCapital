@@ -1,7 +1,7 @@
 # Demo for scraping data from Fang.com
 The repo provides two demo for scraping data from property listing sites.
 
-The main.py program scrap all property listing data for Beijing and ShengZheng. The data is stored in MongoDB. (Please refer to the section below for access details)
+The main.py program scraps all property listing data for Beijing and ShengZheng. The data is stored in MongoDB. (Please refer to the section below for access details)
 
 The search.py program will search the property name in Fang.com and return the property information.
 
@@ -22,13 +22,13 @@ You can see the files in the git repo.
 
 ## Challenges ahead
 1. This demo only takes care one property listing site.
-2. There will be inconsistency between different property listing site.
-3. The search string or keywords provided by colleagues may not be exact match with databases.
+2. There will be inconsistency between different property listing sites.
+3. The search strings or keywords provided by colleagues may not be exact match with databases.
 
 Solutions:
-* We need to write different script for different sites. But the logic or methods should be similar.
+* We need to write different scripts for different sites. But the logic or methods should be similar.
 * We need to build an intermediate database (similar to datawarehouse) to transform the data from different sites into the same format, for example units.
-* We need to build a search enginee to take care of exact match problem. For example, by typing 錦安家園 (朝陽區東壩項目), the program will need to know it means 錦安家園 in our database. (In the search.py example, since I just use the search function from Fang.com. It is not a problem. But if we scale it to 20 property site, we need to have our own search function)
+* We need to build a search enginee to take care of exact match problem. For example, by typing 錦安家園 (朝陽區東壩項目), the program will need to know it means 錦安家園 in our database. (In the search.py example, since I just use the search function from Fang.com. It is not a problem. But if we scale it to 20 property sites, we need to have our own search function)
 
     For search enginee, we may use [elasticsearch](https://www.elastic.co/) which I do not have many experience with it. Still, I think I can manage to figure it out.
 
