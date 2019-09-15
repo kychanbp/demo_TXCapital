@@ -10,6 +10,9 @@ The idea behind the scraping is to figure out the hidden API. Usually, Website u
 
 To access the demo data, please connect to the Cloud MongoDB server via this link: mongodb+srv://admin:admin@propertychina-xxlht.mongodb.net/test?retryWrites=true&w=majority (You may download mongodb compass or nosqlbooster)
 
+screencap of data:
+![](main_cap.png)
+
 ## search.py
 The logic is the same as Main.py. The codes are similar. The only difference is that search string is passed to the API.
 
