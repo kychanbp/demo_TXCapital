@@ -13,6 +13,11 @@ To access the demo data, please connect to the Cloud MongoDB server via this lin
 screencap of data:
 ![](main_cap.png)
 
+### Why MongoDB?
+The first database I tried to use is SQL (more precise sqlite). Soon, I encountered the problem that the download data has inconsistent columns. For example, few columns in some data, and more columns in some data.
+
+NoSQL is more flexible in terms of table schema. Therefore, I use MongoDB.
+
 ## search.py
 The logic is the same as Main.py. The codes are similar. The only difference is that search string is passed to the API.
 
