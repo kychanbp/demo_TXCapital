@@ -6,7 +6,7 @@ from datetime import datetime
 import numpy as np
 import pandas as pd
 
-df_requests = pd.read_csv("test_data.csv")
+df_requests = pd.read_csv("test_data_gz.csv")
 
 df_result = pd.DataFrame()
 notFound = []
