@@ -18,6 +18,8 @@ The logic is the same as Main.py. The codes are similar. The only difference is 
 
 The program will take a CSV input file containing City, District, and Name. Then it returns all matched data. The result is outputted as searchResult.csv. For not found property, it will output a file called notFound.txt.
 
+You can see the files in the git repo.
+
 ## Challenges ahead
 1. This demo only takes care one property listing site.
 2. There will be inconsistency between different property listing site.
@@ -28,7 +30,7 @@ Solutions:
 * We need to build an intermediate database (similar to datawarehouse) to transform the data from different sites into the same format, for example units.
 * We need to build a search enginee to take care of exact match problem. For example, by typing 錦安家園 (朝陽區東壩項目), the program will need to know it means 錦安家園 in our database. (In the search.py example, since I just use the search function from Fang.com. It is not a problem. But if we scale it to 20 property site, we need to have our own search function)
 
-For search enginee, we may use elasticsearch which I do not have many experience with it. Still, I think I can manage to figure it out.
+    For search enginee, we may use [elasticsearch](https://www.elastic.co/) which I do not have many experience with it. Still, I think I can manage to figure it out.
 
 ## Location search
 There is one use case where the program will need to filter all the property listing within a certain area.
@@ -36,3 +38,8 @@ There is one use case where the program will need to filter all the property lis
 As you can see in the database, the data returned contains X, Y coordinates. The filtering can easily be done using Geographical Information System (GIS). I have good knowledge in GIS due to my previous work as an Environmental Consultant. I deal with a lot of Geo Data.
 
 Actually, if the search area can be approximate by a rectangle, we don't even need GIS. We can just filter by coordinates. But, if the search area is a polygon, then GIS is needed.
+
+## How to run
+1. Git clone the repo
+2. Install the dependencies in the pip file
+3. Python program.py to run
